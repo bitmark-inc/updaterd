@@ -16,14 +16,17 @@ go install
 
 Create the configuration directory, copy sample configuration, edit it
 to set up blockchain connections and the database.
-The sample configuration has some embedded instructions for quick
-setup and only a few items near the beginning of the file need to be
-set for basic use.
 
 ~~~~~
 mkdir -p ~/.config/updaterd
 cp updaterd.conf.sample  ~/.config/updaterd/updaterd.conf
 ${EDITOR} ~/.config/updaterd/updaterd.conf
+~~~~~
+
+Generate the the key pair for communicating with Bitmark blockchain nodes.
+
+~~~~~
+updaterd --config-file=~/.config/updaterd/updaterd.conf generate-identity
 ~~~~~
 
 ## Setup and run updaterd
