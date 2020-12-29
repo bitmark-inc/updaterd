@@ -1,0 +1,5 @@
+etc/updaterd.conf etc
+bin/updaterd usr/sbin
+share/README.md usr/share/updaterd
+share/schema.sql usr/share/updaterd
+share/install-schema usr/share/updaterd

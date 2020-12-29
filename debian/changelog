@@ -1,0 +1,98 @@
+updaterd (7.0-1) unstable; urgency=medium
+
+  * update to be compatible with bitmarkd v7.0
+
+ -- Christopher Hall <hsw@bitmark.com>  Mon, 19 Mar 2018 07:17:22 +0000
+
+updaterd (6.1-1) unstable; urgency=medium
+
+  * added support for counter signed transfers
+
+ -- Christopher Hall <hsw@bitmark.com>  Mon, 11 Dec 2017 03:14:33 +0000
+
+updaterd (6.0-1) unstable; urgency=medium
+
+  * update updaterd to v6.0 followed the version of bitmarkd
+  * add more notification events, such as, new_issues and new_transfers
+  * add a table for preserving notification events
+  * fix the race condition problem by updating sql functions
+
+ -- Jim Yeh <jim@bitmark.com>  Wed, 27 Oct 2017 21:53:36 +0000
+
+updaterd (3.48-1) unstable; urgency=medium
+
+  * verify block linking before store it
+  * improve logging
+  * minor bug fixed
+
+ -- Jim Yeh <jim@bitmark.com>  Wed, 20 Sep 2017 09:53:36 +0000
+
+updaterd (3.47-1) unstable; urgency=medium
+
+  * update updaterd schema
+
+ -- Jim Yeh <jim@bitmark.com>  Thu, 03 Aug 2017 14:53:36 +0000
+
+updaterd (3.46-1) unstable; urgency=medium
+
+  * update updaterd version
+
+ -- Jim Yeh <jim@bitmark.com>  Tue, 11 Jul 2017 14:53:36 +0000
+
+updaterd (3.45-2) unstable; urgency=medium
+
+  * fix version line
+
+ -- Christopher Hall <hsw@bitmark.com>  Tue, 11 Jul 2017 02:53:36 +0000
+
+updaterd (3.45-1) unstable; urgency=medium
+
+  * add example query functions to schema
+
+ -- Christopher Hall <hsw@bitmark.com>  Thu, 06 Jul 2017 04:10:27 +0000
+
+updaterd (3.44-1) unstable; urgency=medium
+
+  * bitmarkd dcependency updated
+
+ -- Christopher Hall <hsw@bitmark.com>  Wed, 05 Jul 2017 07:51:51 +0000
+
+updaterd (3.43-1) unstable; urgency=medium
+
+  * vendor dependencies updated
+
+ -- Christopher Hall <hsw@bitmark.com>  Wed, 05 Jul 2017 03:50:44 +0000
+
+updaterd (3.42-1) unstable; urgency=medium
+
+  * new logger interface
+  * sequence field for schema
+  * update the install schema script
+  * hcl structure tags
+
+ -- Christopher Hall <hsw@bitmark.com>  Tue, 04 Jul 2017 06:56:50 +0000
+
+updaterd (3.41-1) unstable; urgency=medium
+
+  * empty object({}) in DB for empty metatdata
+
+ -- Christopher Hall <hsw@bitmark.com>  Tue, 13 Jun 2017 05:54:17 +0000
+
+updaterd (3.39-1) unstable; urgency=medium
+
+  * fix incorrect syntax inschema
+
+ -- Christopher Hall <hsw@bitmark.com>  Tue, 23 May 2017 10:41:54 +0000
+
+updaterd (3.38-1) unstable; urgency=medium
+
+  * fixes for block offset in database
+
+ -- Christopher Hall <hsw@bitmark.com>  Tue, 23 May 2017 10:14:11 +0000
+
+updaterd (3.34-1) unstable; urgency=medium
+
+  * Initial release (Closes: #0, #0)
+  * Document initial release.
+
+ -- Bitmark Developers <developers@bitmark.com>  Fri, 19 Feb 2016 18:23:30 +0800

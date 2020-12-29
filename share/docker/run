@@ -1,0 +1,17 @@
+#!/bin/sh
+
+/init
+
+export PGPASSWORD=${DB_PASSWORD}
+
+# The database needs to be initialised first. We will check the `blockchain` schema by user updaterd.
+while [ $? -ne 0 ]; do
+  psql -h ${DB_HOST} ${DB_NAME} updaterd -c '\dn;' | grep blockchain
+  if [ $? -ne 0 ]
+  then
+    printf "Database is not ready";
+    sleep 1
+  fi
+done
+
+updaterd -c ${CONFIG_FILE}

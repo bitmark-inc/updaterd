@@ -1,0 +1,25 @@
+Source: updaterd
+Section: non-free/admin
+Priority: optional
+Maintainer: Bitmark Developers <developers@bitmark.com>
+Uploaders: Bitmark Developers <developers@bitmark.com>
+Build-Depends: debhelper (>=9),
+               dh-systemd,
+               autoconf, automake, libtool, pkgconf,
+               libssl-dev, libcurl4-openssl-dev,
+               libzmq3-dev,
+               golang [!powerpc],
+               gccgo [powerpc]
+Standards-Version: 3.9.6
+Homepage: https://bitmark.com
+#Vcs-Git: git://anonscm.debian.org/server-control/server-control.git
+#Vcs-Browser: http://anonscm.debian.org/cgit/server-control/server-control.git
+
+Package: updaterd
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends:
+Description: Database update tracking Bitmark Blockchain V2
+ Joins Bintmark P2P network and monitors traffic.
+ .
+ Keeps a PostgreSQL database up to date with the current state of the block chain.
