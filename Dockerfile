@@ -27,7 +27,7 @@ RUN go install ./...
 
 ENV DATA_DIR=/.config/updaterd
 ENV CONFIG_FILE=${DATA_DIR}/updaterd.conf
-ENV PROJ_HOME=/go/src/github.com/bitmark-inc/go-programs/updaterd
+ENV PROJ_HOME=/go/src/github.com/bitmark-inc/updaterd
 
 COPY updaterd.conf.sample ${CONFIG_FILE}
 COPY share/docker/run /run.sh

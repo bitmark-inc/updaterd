@@ -3,7 +3,7 @@
 
 GOPATH = ${CURDIR}
 BIN_DIR = ${GOPATH}/bin
-PROJECT_DIR = ${GOPATH}/src/github.com/bitmark-inc/go-programs/updaterd
+PROJECT_DIR = ${GOPATH}/src/github.com/bitmark-inc/updaterd
 C_LIBRARIES_DIR = ${PROJECT_DIR}/c-libraries
 PC_WRAPPER_DIR = ${C_LIBRARIES_DIR}
 

@@ -6,19 +6,20 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"os/signal"
+	"strings"
+	"syscall"
+
 	"github.com/bitmark-inc/bitmarkd/blockrecord"
 	"github.com/bitmark-inc/bitmarkd/mode"
 	"github.com/bitmark-inc/bitmarkd/zmqutil"
 	"github.com/bitmark-inc/exitwithstatus"
 	"github.com/bitmark-inc/getoptions"
-	"github.com/bitmark-inc/go-programs/updaterd/peer"
-	"github.com/bitmark-inc/go-programs/updaterd/storage"
 	"github.com/bitmark-inc/logger"
-	"os"
-	"os/signal"
-	//"runtime/pprof"
-	"strings"
-	"syscall"
+
+	"github.com/bitmark-inc/updaterd/peer"
+	"github.com/bitmark-inc/updaterd/storage"
 )
 
 // set by the linker: go build -ldflags "-X main.version=M.N" ./...
