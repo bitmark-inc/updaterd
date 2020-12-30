@@ -9,16 +9,18 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"encoding/json"
+	"time"
+
 	"github.com/bitmark-inc/bitmarkd/blockdigest"
 	"github.com/bitmark-inc/bitmarkd/fault"
 	"github.com/bitmark-inc/bitmarkd/genesis"
 	"github.com/bitmark-inc/bitmarkd/mode"
 	"github.com/bitmark-inc/bitmarkd/util"
-	"github.com/bitmark-inc/go-programs/updaterd/storage"
-	"github.com/bitmark-inc/go-programs/updaterd/zmqutil"
 	"github.com/bitmark-inc/logger"
 	zmq "github.com/pebbe/zmq4"
-	"time"
+
+	"github.com/bitmark-inc/updaterd/storage"
+	"github.com/bitmark-inc/updaterd/zmqutil"
 )
 
 // various timeouts

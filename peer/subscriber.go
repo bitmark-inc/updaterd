@@ -12,10 +12,11 @@ import (
 	"github.com/bitmark-inc/bitmarkd/fault"
 	"github.com/bitmark-inc/bitmarkd/mode"
 	"github.com/bitmark-inc/bitmarkd/util"
-	"github.com/bitmark-inc/go-programs/updaterd/storage"
-	"github.com/bitmark-inc/go-programs/updaterd/zmqutil"
 	"github.com/bitmark-inc/logger"
 	zmq "github.com/pebbe/zmq4"
+
+	"github.com/bitmark-inc/updaterd/storage"
+	"github.com/bitmark-inc/updaterd/zmqutil"
 )
 
 const (

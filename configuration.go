@@ -7,15 +7,17 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/bitmark-inc/bitmarkd/chain"
-	"github.com/bitmark-inc/bitmarkd/configuration"
-	"github.com/bitmark-inc/bitmarkd/util"
-	"github.com/bitmark-inc/go-programs/updaterd/peer"
-	"github.com/bitmark-inc/go-programs/updaterd/storage"
-	"github.com/bitmark-inc/logger"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/bitmark-inc/bitmarkd/chain"
+	"github.com/bitmark-inc/bitmarkd/configuration"
+	"github.com/bitmark-inc/bitmarkd/util"
+	"github.com/bitmark-inc/logger"
+
+	"github.com/bitmark-inc/updaterd/peer"
+	"github.com/bitmark-inc/updaterd/storage"
 )
 
 // basic defaults (directories and files are relative to the "DataDirectory" from Configuration file)
